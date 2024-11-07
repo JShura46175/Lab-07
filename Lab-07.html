@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--External styling-->
+    <!--Link rel="stylesheet" href="styles.css"-->
+    <style> 
+.transition-button { 
+    transition: all;
+    transition-duration: 0.5s;
+    background-color: blue;
+}
+.transition-button:hover { 
+    background-color: green;
+}
+.transition-div {
+    transition-duration: 1s;
+    width: 100px; height: 100px; transition: all;
+    background-color: aqua;
+}
+.transition-div:hover { 
+    width: 200px;
+    background-color:yellowgreen ;
+}
+.transition-text{ 
+    transition: 0.3s;
+    font-size: 16px;
+}
+.transition-text :hover{
+    font-size: 24px;
+}
+.transition-image { opacity: 1 ;
+    transition: 0.8s;
+}
+.transiton-image :hover {
+    opacity: 0.5;
+}
+.scale-div{ transition: transform 0.3s;
+}
+.scale-div :hover { transform: scale(1.5);
+}
+.scale-image{transition:all;
+     transition-duration: 0.3s;
+}
+.scale-image :hover{
+     scale: (0.75);
+}
+.translate-button { transition:all;
+     transform: 0.3s; }
+.translate-button:hover{
+     transform: ( 50px, 20px);
+}
+.translate-div{ transition: all;
+     transform: 0.3s;
+}
+.translate-div:hover{
+    transform: translate(-100px);
+}
+.skew-heading { transition: transform 0.3s;
+}
+.skew-heading:hover{ 
+    transform: skewX(20deg);}
+.skew-paragraph {
+    transition: transform 0.3s;
+}
+.skew-paragraph:hover{
+    transform: skewY(15deg);
+}
+    </style>
+</head>
+<body>
+    <button class="transition-button"> Click here </button><br><br><br>
+    <div class="transition-div"> This is a div </div>
+    <p class="transition-text"> Lorem ipsum dolor sit, amet consectetur adipisicing elit.,<br> Ea dolorum voluptates laboriosam, minus quis cupiditate? Inventore fugit vitae suscipit eligendi veniam obcaecati beatae.<br> Itaque dolore ipsam vel aliquam placeat assumenda!</p>
+    <img class="transition-image" src="Architecture-PNG-Isolated-File.png"> 
+    <div class="scale-div"> This is a div 2</div>
+    <img class="scale-image" src="Architecture-Vector-PNG-Photos.png">
+    <button class="translate-button"> Click here</button>
+    <div class="translate-div"> This is a div 3</div>
+    <h1 class="skew-heading"> Heading 1</h1>
+    <p class="skew-paragraph"> Lorem ipsum dolor sit amet consectetur<br> adipisicing elit. Suscipit repellendus pariatur reiciendis id cum accusantium facilis eum quam alias, eius <br>aliquid praesentium illum dolore temporibus, sint laborum quaerat aperiam. Explicabo?</p><br>
+
+</body>
+</html>
